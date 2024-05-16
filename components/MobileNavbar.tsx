@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export default function MobileNavbar() {
   return (
-    <ul className="flex flex-col flexCenter lg:hidden w-full gap-5">
+    <ul className="flexCenter flex w-full flex-col gap-5 lg:hidden">
       {NAV_LINKS.map(({ href, key, label }) => (
         <Link
           href={href}
           key={key}
-          className="regular-16 text-gray-50 flexCenter cursor-pointer py-1.5 transition-all hover:font-bold border-b-2 hover:border-b-gray-50"
+          className="regular-16 flexCenter cursor-pointer border-b-2 py-1.5 text-gray-50 transition-all hover:border-b-gray-50 hover:font-bold"
         >
           {label}
         </Link>

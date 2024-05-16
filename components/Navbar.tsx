@@ -24,14 +24,14 @@ export default function Navbar() {
             <Link
               href={href}
               key={key}
-              className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+              className="regular-16 flexCenter cursor-pointer pb-1.5 text-gray-50 transition-all hover:font-bold"
             >
               {label}
             </Link>
           ))}
         </ul>
 
-        <div className="hidden lg:flexCenter">
+        <div className="lg:flexCenter hidden">
           <Button
             type="button"
             title="Login"
